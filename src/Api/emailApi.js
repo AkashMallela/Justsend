@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 const emailApi = axios.create({
-    baseURL: "http://localhost:5000/mail/", headers: {
+    baseURL: "https://justsend.onrender.com/mail/", headers: {
         Authorization: `Bearer ${localStorage.getItem('token')}`
     }
 });
