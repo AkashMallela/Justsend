@@ -1,0 +1,22 @@
+.inbox{
+    display: flex;
+    background-color: white;
+    min-height: 100%;
+}
+.logout-btn{
+    color: #427D9D;
+        background-color: white;
+        font-family: 'lato';
+        height: 30px;
+        border-radius: 5px;
+        margin: 10px 0px;
+        border: 1px solid #427D9D;
+        width: 20%;
+        transition: all ease 0.4s;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1) translateY(-2px);
+            color: white;
+            background-color: #427D9D;
+        }
+}

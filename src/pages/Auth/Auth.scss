@@ -1,0 +1,108 @@
+.auth {
+    display: flex;
+    flex-direction: column;
+    font-family: 'lato',cursive;
+
+    &-nav {
+        display: flex;
+        box-shadow: 3px 2px #F1EFEF;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        
+
+        &-title {
+            font-size: 25px;
+            text-decoration: none;
+            color: #2e86f9;
+            font-family: 'lato', cursive;
+            &-icon{
+                color: #2e86f9;
+            }
+            &-div {
+                display: flex;
+                // gap: 5px;
+                justify-content: center;
+                align-items: center;
+                margin-left: 120px;
+            }
+        }
+
+        &-btn-div {
+            display: flex;
+            gap: 30px;
+            margin-right: 80px;
+
+        }
+
+        &-signin-btn {
+            background-color: white;
+            color: #2e86f9;
+            padding: 15px 25px;
+            border-radius: 3px;
+            border: 1px solid #4682A9;
+
+            &:hover {
+                background-color: rgb(252, 248, 248);
+                transition: all 0.4s ease;
+                transform: scale(1.03) translateY(-1px);
+            }
+        }
+
+        &-create-btn {
+            background-color: #2e86f9;
+            padding: 15px 25px;
+            border-radius: 3px;
+            border: 1px solid #4682A9;
+            color: white;
+
+            &:hover {
+                transition: all 0.4s ease;
+                transform: scale(1.03) translateY(-1px);
+            }
+        }
+    }
+    &-main{
+        display: flex;
+        align-items: center;
+        &-div{
+            width: 50%;
+        }
+        &-img{
+            width: 50%;
+        }
+        margin: 100px 80px 100px 120px;
+        display: flex;
+        gap: 20px;
+        &-heading{
+            font-size: 56px;
+            line-height: 58px;
+            font-weight: 500;
+        }
+        &-sub-heading{
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+}
+
+@media only screen and (max-width: 760px){
+    .auth-nav-title-div{
+        margin-left: 40px;
+    }
+    .auth-nav-btn-div{
+        gap: 15px;
+        margin-right: 20px;
+    }
+    .auth-main{
+        display: flex;
+        flex-direction: column;
+        &-div{
+            width: 100%;
+        }
+        &-img{
+            width: 100%;
+        }
+    }
+}

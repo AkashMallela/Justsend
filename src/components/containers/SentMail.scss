@@ -1,0 +1,119 @@
+.sent-mail{
+    display: flex;
+}
+
+
+.main {
+    width: 80%;
+    &-header {
+        margin: 40px 30px;
+        display: flex;
+        &-form {
+            position: relative;
+            flex-grow: 1;
+            &-input {
+                font-size: 18px;
+                background-color: #ebf9fe;
+                padding: 15px 50px;
+                width: 50%;
+                border-radius: 30px;
+                outline: none;
+                border: none;
+                box-shadow: 2px 2px gray;
+
+                &:focus {
+                    background-color: white;
+                    outline: none;
+                    border: none;
+                    box-shadow: 2px 2px gray;
+                }
+            }
+        }
+
+        &-form-search-icon {
+            position: absolute;
+            top: 16px;
+            left: 20px;
+        }
+    }
+
+    &-content {
+        margin: 0px 20px 20px 20px;
+        border-radius: 30px;
+        background: #ffffff;
+        box-shadow: 20px 20px 47px #c2c2c2,
+            -20px -20px 47px #ffffff;
+
+        &-header {
+            background-color: white;
+            border: 1px solid white;
+            border-bottom: 2px solid #ebf9fe;
+            box-shadow: 1px 1px 2px 2px #ebf9fe;
+            font-size: 10px;
+            padding: 0px 20px;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        &-mails {
+            border-radius: 0px 0px 10px 10px;
+            margin: 0px;
+
+            &-div {
+                border: none;
+                border-bottom: 2px solid #ebf9fe;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: #ebf9fe;
+                }
+            }
+
+            &-2 {
+                display: flex;
+                gap: 20px;
+
+                h1,
+                p,
+                h2 {
+                    font-size: 15px;
+                    padding: 10px 20px;
+                    margin: 0px;
+                }
+            }
+        }
+    }
+}
+
+.logout-btn{
+    color: #427D9D;
+        background-color: white;
+        font-family: 'lato';
+        height: 30px;
+        border-radius: 5px;
+        margin: 10px 0px;
+        border: 1px solid #427D9D;
+        width: 20%;
+        padding: 5px 10px;
+        transition: all ease 0.4s;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1) translateY(-2px);
+            color: white;
+            background-color: #427D9D;
+        }
+}
+
+@media only screen and (max-width:760px) {
+    .main-content-mails-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+
+        h1,
+        p,
+        h2 {
+            font-size: 12px;
+            padding: 5px 20px;
+        }
+    }
+}
